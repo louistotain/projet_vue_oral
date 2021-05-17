@@ -1,12 +1,13 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Home</router-link>
+    <router-link to="/authors" class="ms-2">Authors</router-link>
+    <router-view/>
   </div>
-  <router-view/>
 </template>
 
 <style lang="scss">
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,4 +28,27 @@
     }
   }
 }
+
+.btn-sort{
+  background-color: antiquewhite;
+  height: 75px;
+  width: 100px;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-sort.active{
+  background-color: #ffcf8f;
+}
+
+</style>
+
+<style scoped>
+
+#nav {
+  padding: 30px;
+  max-height: 100vh;
+  height: 100vh;
+}
+
 </style>
