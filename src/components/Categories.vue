@@ -24,7 +24,7 @@
   <div id="editBackground" @click="hideEdit" v-if="EditIsActive" class="position-absolute top-50 start-50 translate-middle" style="height: 100vh; width: 100vw; background-color: #0000004d; z-index: 0;"></div>
 
   <div class="container-fluid row d-flex justify-content-center mt-3">
-    <h1>Authors</h1>
+    <h1>Categories</h1>
 
     <div class="row col-12 mb-5">
 
@@ -116,7 +116,7 @@ import axios from "axios"
 import ViewTab from '@/components/Authors/ViewTab';
 
 export default {
-  name: 'Authors',
+  name: 'Categories',
   components: {
     ViewTab
   },
@@ -180,6 +180,8 @@ export default {
 
     },
     showEdit(uuid, firstname, lastname, birthdate, death_date){
+
+
 
       var NewBirthdate = new Date(birthdate);
 

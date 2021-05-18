@@ -2,12 +2,14 @@
   <div>
     <h1>Welcome to my vue js project website</h1>
       <div class="row mt-2 d-flex justify-content-center">
+
         <div class="col-1">
           <img class="col-12 meme-1" src="https://img.wattpad.com/ab95783297505de324684f74bb4931377a45fed5/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f5255726e79506a43734e495954673d3d2d3736393133363636312e313562393830373264313139303063393638393331303037303930302e676966" style="height: 90px; margin-top: 0;">
           <img class="col-12 meme-1" src="https://img.wattpad.com/ab95783297505de324684f74bb4931377a45fed5/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f5255726e79506a43734e495954673d3d2d3736393133363636312e313562393830373264313139303063393638393331303037303930302e676966">
           <img class="col-12 meme-1" src="https://img.wattpad.com/ab95783297505de324684f74bb4931377a45fed5/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f5255726e79506a43734e495954673d3d2d3736393133363636312e313562393830373264313139303063393638393331303037303930302e676966">
           <img class="col-12 meme-1" src="https://img.wattpad.com/ab95783297505de324684f74bb4931377a45fed5/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f5255726e79506a43734e495954673d3d2d3736393133363636312e313562393830373264313139303063393638393331303037303930302e676966" style="height: 90px; margin-top: 10px;">
         </div>
+
         <img class="col-3 meme-2" src="https://thumbs.gfycat.com/MajorConsciousCorydorascatfish-size_restricted.gif" style="height: 400px;">
         <img class="col-3 meme-2" src="https://thumbs.gfycat.com/AdoredTiredHamster-size_restricted.gif" style="height: 400px;">
         <img class="col-3 meme-2" src="https://i.kym-cdn.com/photos/images/original/000/053/748/Best-Cry-Ever.gif" style="height: 400px;">
@@ -29,7 +31,7 @@
           <img class="col-12 meme-1" src="https://img.wattpad.com/ab95783297505de324684f74bb4931377a45fed5/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f5255726e79506a43734e495954673d3d2d3736393133363636312e313562393830373264313139303063393638393331303037303930302e676966" style="height: 90px; margin-top: 10px;">
         </div>
 
-        <img class="col-3 meme-2" src="https://img.buzzfeed.com/buzzfeed-static/static/2017-12/6/13/asset/buzzfeed-prod-fastlane-01/anigif_sub-buzz-20812-1512586522-16.gif?output-quality=auto&output-format=auto&downsize=360:*" style="height: 400px;">
+        <img class="col-3 meme-2" src="https://i.makeagif.com/media/12-21-2020/M8f3Si.gif" style="height: 400px;">
         <img class="col-3 meme-2" src="https://i.makeagif.com/media/1-10-2016/mn4nUK.gif" style="height: 400px;">
         <img class="col-3 meme-2" src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/8687957/tenor.gif" style="height: 400px;">
 

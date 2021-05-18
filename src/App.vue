@@ -2,6 +2,8 @@
   <div id="nav">
     <router-link to="/">Home</router-link>
     <router-link to="/authors" class="ms-2">Authors</router-link>
+    <router-link to="/books" class="ms-2">Books</router-link>
+    <router-link to="/categories" class="ms-2">Categories</router-link>
     <router-view/>
   </div>
 </template>
@@ -31,7 +33,7 @@
 
 .btn-sort{
   background-color: antiquewhite;
-  height: 75px;
+  height: 100px;
   width: 100px;
   outline: none !important;
   box-shadow: none !important;
