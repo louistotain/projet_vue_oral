@@ -41,6 +41,10 @@
   background-color: #ffcf8f;
 }
 
+html {
+  scroll-behavior: auto !important;
+}
+
 </style>
 
 <style scoped>
