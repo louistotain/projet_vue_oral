@@ -174,9 +174,9 @@ export default {
       }else{
         this.sortBooks = Books;
       }
+
     },
     created(name, authorUuid, categoryUuid, status, publishDate) {
-      console.log("mon projet est écl")
       const book = {
         name: name,
         author_id: authorUuid,
@@ -185,11 +185,7 @@ export default {
         publish_date: publishDate
       };
 
-      axios.post("http://127.0.0.1:8000/api/books", book, {
-        headers: {
-          'Authorization': 'Bearer xYXSMCvS8TxHthN7L38QaLsamvLuAHp40mYHjkzn'
-        }
-      })
+      axios.post("http://127.0.0.1:8000/api/books", book, this.$store.state.header)
           .then(response => {
             alert('success create');
             location.reload();
@@ -226,11 +222,7 @@ export default {
       if (result) {
 
         axios
-            .delete("http://127.0.0.1:8000/api/books/" + uuid, {
-              headers: {
-                'Authorization': 'Bearer 1APWZ799cVZgF7zxRgay9K50CICJZrHFnkr5IM3N'
-              }
-            })
+            .delete("http://127.0.0.1:8000/api/books/" + uuid, this.$store.state.header)
             .then(response => {
               alert('success delete');
               location.reload();
@@ -249,11 +241,7 @@ export default {
         publish_date: publishDate
       };
 
-      axios.put("http://127.0.0.1:8000/api/books/" + uuid, book, {
-        headers: {
-          'Authorization': 'Bearer xYXSMCvS8TxHthN7L38QaLsamvLuAHp40mYHjkzn'
-        }
-      })
+      axios.put("http://127.0.0.1:8000/api/books/" + uuid, book, this.$store.state.header)
           .then(response => {
             alert('success edit');
             location.reload();
@@ -265,7 +253,7 @@ export default {
 
     }
   },
-  mounted: function () {
+  mounted() {
 
     axios.get("http://127.0.0.1:8000/api/books")
       .then((response) => {
@@ -290,7 +278,6 @@ export default {
         .catch((error) => {
           this.error = 'Une erreur est survenue : ' + error;
         });
-
 
   }
 }

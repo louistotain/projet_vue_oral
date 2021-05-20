@@ -113,13 +113,8 @@
 
 import axios from "axios"
 
-import ViewTab from '@/components/Authors/ViewTab';
-
 export default {
   name: 'Authors',
-  components: {
-    ViewTab
-  },
   data: function () {
     return {
       initAuthors : null,
@@ -164,11 +159,7 @@ export default {
         death_date: death_date
       };
 
-      axios.post("http://127.0.0.1:8000/api/authors", author, {
-        headers: {
-          'Authorization': 'Bearer xYXSMCvS8TxHthN7L38QaLsamvLuAHp40mYHjkzn'
-        }
-      })
+      axios.post("http://127.0.0.1:8000/api/authors", author, this.$store.state.header)
           .then(response => {
             alert('success create');
             location.reload();
@@ -205,11 +196,7 @@ export default {
       if (result) {
 
         axios
-            .delete("http://127.0.0.1:8000/api/authors/" + uuid, {
-              headers: {
-                'Authorization': 'Bearer 1APWZ799cVZgF7zxRgay9K50CICJZrHFnkr5IM3N'
-              }
-            })
+            .delete("http://127.0.0.1:8000/api/authors/" + uuid, this.$store.state.header)
             .then(response => {
               alert('success delete');
               location.reload();
@@ -231,11 +218,7 @@ export default {
         death_date: death_date
       };
 
-      axios.put("http://127.0.0.1:8000/api/authors/" + uuid, author, {
-        headers: {
-          'Authorization': 'Bearer xYXSMCvS8TxHthN7L38QaLsamvLuAHp40mYHjkzn'
-        }
-      })
+      axios.put("http://127.0.0.1:8000/api/authors/" + uuid, author, this.$store.state.header)
           .then(response => {
             alert('success edit');
             location.reload();
