@@ -1,4 +1,4 @@
-# sitepokemixartvuex
+# projet vue oral
 
 ## Project setup
 ```
